@@ -9,7 +9,11 @@
       annepro2tools = pkgs.callPackage ./annepro2-tools.nix { };
     in
     {
-      packages.annepro2tools = annepro2tools;
+
+      # pkgname.package.${system}.annepro2-tools
+      packages.annepro2-tools = annepro2tools;
+
+      # pkgname.defaultPackage.${system};
       defaultPackage = annepro2tools;
     }
     );
