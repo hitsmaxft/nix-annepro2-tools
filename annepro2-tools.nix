@@ -1,4 +1,4 @@
-{ pkgs, stdenv, fetchFromGitHub, autoPatchelfHook }:
+{ pkgs, stdenv, fetchFromGitHub, autoPatchelfHook, system? builtins.currentSystem }:
 
 let
   version = "fe5ed6585b0af274e3220d5abe49ee419c34924a";
@@ -19,6 +19,6 @@ stdenv.mkDerivation {
   buildInputs = [ pkgs.libusb1 pkgs.cargo pkgs.rustc pkgs.pkgconfig];
 
   installPhase = ./annepro2-tools-install.sh;
-  system = builtins.currentSystem;
+  system = system;
 }
 
