@@ -14,7 +14,7 @@ stdenv.mkDerivation {
     sha256="Oy5acTuE0Oz5CdFXDkwFrtoHEFC3B/lQR/4kjlqcibE=";
   };
 
-  nativeBuildInputs = [ autoPatchelfHook ];
+  #nativeBuildInputs = [ autoPatchelfHook ];
 
   buildInputs = [ pkgs.libusb1 pkgs.cargo pkgs.rustc pkgs.pkgconfig];
 

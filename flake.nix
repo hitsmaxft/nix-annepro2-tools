@@ -2,7 +2,7 @@
   description = "A set of tools to flash an annepro2 keyboard with custom firmware.";
   inputs.flake-utils.url = "github:numtide/flake-utils";
   outputs = { self, nixpkgs, flake-utils } :
-  flake-utils.lib.eachDefaultSystem (
+  flake-utils.lib.eachSystem ["x86_64-darwin" "x86_64-apple-darwin"] (
     system:
     let
       pkgs = nixpkgs.legacyPackages.${system};
@@ -15,6 +15,10 @@
 
       # pkgname.defaultPackage.${system};
       defaultPackage = annepro2tools;
+
+      devShells.default = pkgs.mkShell {
+        buildInputs = [ annepro2tools ];
+      };
     }
     );
   }
