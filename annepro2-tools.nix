@@ -16,7 +16,7 @@ stdenv.mkDerivation {
 
   #nativeBuildInputs = [ autoPatchelfHook ];
 
-  buildInputs = [ pkgs.libusb1 pkgs.cargo pkgs.rustc pkgs.pkgconfig];
+  buildInputs = [ pkgs.libusb1 pkgs.cargo pkgs.rustc pkgs.pkgconfig pkgs.cacert ];
 
   installPhase = ./annepro2-tools-install.sh;
   system = system;
