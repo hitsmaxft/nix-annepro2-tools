@@ -7,8 +7,8 @@ Simply run
 
 `--no-sandbox` is required to download cargo packages for building.
 
-Run using `annepro2_tools`.
+Run using `annepro2-tools`.
 
 
 run annepro2-tools direct
-```nix run github:hitsmaxft/nix-annepro2-tools annepro2_tools -- --help```
+```nix run github:hitsmaxft/nix-annepro2-tools annepro2-tools -- --help```
