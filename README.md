@@ -1,4 +1,4 @@
-# nix-annepro2-tools
+# annepro2-tools flake package
 
 A nix flake to run annepro2-tools 
 
