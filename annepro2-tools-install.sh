@@ -8,5 +8,7 @@ cargo build --release
 mkdir -p $out/bin
 # Copy the binary to the output binary directory.
 cp ./target/release/annepro2_tools $out/bin/annepro2-tools
+cp ./target/release/annepro2_tools $out/bin/annepro2_tools
 # Allow execution of the binary.
 chmod +x $out/bin/annepro2-tools
+chmod +x $out/bin/annepro2_tools
