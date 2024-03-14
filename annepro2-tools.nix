@@ -8,7 +8,7 @@ stdenv.mkDerivation {
   version = version;
 
   src = fetchFromGitHub {
-    owner = "OpenAnnePro";
+    owner = "hitsmaxft";
     repo = "AnnePro2-Tools";
     rev = version;
     sha256="Oy5acTuE0Oz5CdFXDkwFrtoHEFC3B/lQR/4kjlqcibE=";
