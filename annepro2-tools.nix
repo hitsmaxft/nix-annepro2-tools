@@ -16,8 +16,8 @@ stdenv.mkDerivation {
 
   #nativeBuildInputs = [ autoPatchelfHook ];
 
-  buildInputs = [ pkgs.libusb1 pkgs.cargo pkgs.rustc pkgs.pkgconfig pkgs.cacert ];
-
+  buildInputs = buildInputs = with pkgs ; [ pkgs.libusb1 pkgs.cargo pkgs.rustc pkgs.pkgconfig pkgs.cacert ] ++ lib.optional stdenv.isDarwin [ darwin.apple_sdk.frameworks.AppKi
+t  libiconv];
   installPhase = ./annepro2-tools-install.sh;
   system = system;
 }
