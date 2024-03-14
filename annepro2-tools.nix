@@ -11,7 +11,7 @@ stdenv.mkDerivation {
     owner = "hitsmaxft";
     repo = "AnnePro2-Tools";
     rev = version;
-    sha256="Oy5acTuE0Oz5CdFXDkwFrtoHEFC3B/lQR/4kjlqcibE=";
+    sha256="z+Ae0tuOBlKIYg56P9I27kI9MsDVdRnsvF4HEczLWqk=";
   };
 
   #nativeBuildInputs = [ autoPatchelfHook ];
