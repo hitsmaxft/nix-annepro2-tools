@@ -1,7 +1,7 @@
 { pkgs, stdenv, fetchFromGitHub, autoPatchelfHook, system? builtins.currentSystem }:
 
 let
-  version = "fe5ed6585b0af274e3220d5abe49ee419c34924a";
+  version = "28832f57501563a7d96befb20c83eab4b98a8eb9";
 in
 stdenv.mkDerivation {
   pname = "annepro2-tools";
