@@ -3,7 +3,7 @@
 A nix flake to run annepro2-tools 
 
 fordevshell, Simply run
-```nix shell github:hitsmaxft/nix-annepro2-tools --no-sandbox```
+```nix shell github:hitsmaxft/nix-annepro2-tools/master`
 
 `--no-sandbox` is required to download cargo packages for building.
 
