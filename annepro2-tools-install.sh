@@ -1,8 +1,13 @@
 # Create the standard environment.
 source $stdenv/setup
 
+#fix `failed to open: /homeless-shelter/.cargo/.package-cache`
+#cargo need $HOME writable
+export HOME=$TEMPDIR 
+
 cp -r $src/* ./
 cargo build --release
+
 
 # Create place to store the binaries.
 mkdir -p $out/bin
