@@ -15,6 +15,8 @@ run annepro2-tools direct
 
 ## use in direnv
 
+append flake command to your .envrc
+
 ```.envrc
 
 use flake github:hitsmaxft/nix-annepro2-tools/master
