@@ -1,9 +1,23 @@
-# nix-annepro2-tools
-A nix flake to run annepro2-tools
+# annepro2-tools flake package
 
-Simply run
-```nix shell github:headblockhead/nix-annepro2-tools --no-sandbox```
+A nix flake to run annepro2-tools 
 
-`--no-sandbox` is required to download cargo packages for building.
+fordevshell, Simply run
+```shell
+nix shell github:hitsmaxft/nix-annepro2-tools/master
+```
 
-Run using `annepro2-tools`.
+* optional `--no-sandbox` is required to download cargo packages for building.
+
+run annepro2-tools direct
+```nix run github:hitsmaxft/nix-annepro2-tools annepro2-tools -- --help```
+
+
+## use in direnv
+
+append flake command to your .envrc
+
+```.envrc
+
+use flake github:hitsmaxft/nix-annepro2-tools/master
+```
