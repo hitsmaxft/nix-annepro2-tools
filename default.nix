@@ -21,6 +21,14 @@ stdenv.mkDerivation rec {
     #cargo need $HOME writable
     export HOME=$TEMPDIR
 
+    mkdir -p $HOME/.cargo
+    cat << EOF | tee -a $HOME/.cargo/config.toml
+[source.crates-io]
+replace-with = 'ustc'
+
+[source.ustc]
+registry = "sparse+https://mirrors.ustc.edu.cn/crates.io-index/"
+EOF
     cp -r $src/* ./
     cargo build --release
 
