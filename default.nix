@@ -14,7 +14,7 @@ rustPlatform.buildRustPackage rec {
   src = fetchFromGitHub {
     owner = "hitsmaxft";
     repo = "AnnePro2-Tools";
-    rev = "3a0b4903012faa710d442140c3a84a92c7b284db";
+    rev = "c6715d574b539fffbbba0e77914196651cd631a4";
     hash = "sha256-c9hN6VFjEoTYI7c4/dvSb4yg/ExZye371I8QxNthFBA=";
   };
 
