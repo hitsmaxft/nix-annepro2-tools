@@ -15,7 +15,7 @@ rustPlatform.buildRustPackage rec {
     owner = "hitsmaxft";
     repo = "AnnePro2-Tools";
     rev = "c6715d574b539fffbbba0e77914196651cd631a4";
-    hash = "sha256-c9hN6VFjEoTYI7c4/dvSb4yg/ExZye371I8QxNthFBA=";
+    hash = "sha256-5prX/HU4ort3qiBPUe/L7Vn/DYR6JCS/fHcph12DpAI=";
   };
 
   cargoLock.lockFile = ./Cargo.lock;
